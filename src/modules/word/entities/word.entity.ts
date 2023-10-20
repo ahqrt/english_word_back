@@ -13,7 +13,7 @@ export class WordEntity extends BaseEntity {
     word: string;
 
     @Expose()
-    @Column({ comment: '例句' })
+    @Column({ comment: '例句', type: 'longtext' })
     sentence: string;
 
     @Expose()
@@ -25,6 +25,6 @@ export class WordEntity extends BaseEntity {
     ukphone: string;
 
     @Expose()
-    @Column({ comment: '翻译' })
+    @Column({ comment: '翻译', type: 'longtext' })
     trans: string;
 }
